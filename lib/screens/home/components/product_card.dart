@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:iconly/iconly.dart';
 
 import '../../../constants.dart';
 
@@ -18,6 +20,7 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int _selected=0;
     return GestureDetector(
       onTap: press,
       child: Container(
@@ -50,11 +53,16 @@ class ProductCard extends StatelessWidget {
                     style: const TextStyle(color: Colors.black),
                   ),
                 ),
-                const SizedBox(width: defaultPadding / 4),
-                Text(
-                  "\$" + price.toString(),
-                  style: Theme.of(context).textTheme.subtitle2,
-                ),
+                const SizedBox(width: defaultPadding / 3),
+                Column(
+                  children: [
+                    Text(
+                      price.toString()+" DA",
+                      style: Theme.of(context).textTheme.subtitle2,
+                    ),
+                    IconButton(onPressed: (){if (_selected==0){_selected=1;}else{_selected=0;} }, icon:Icon((_selected==0)? IconlyLight.heart: IconlyBold.heart, color: Color(0xB4FF4469),)),
+                  ],
+                )
               ],
             )
           ],

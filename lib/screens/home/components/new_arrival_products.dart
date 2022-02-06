@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stylish/models/Product.dart';
-import 'package:stylish/screens/details/details_screen.dart';
+import 'package:flutter_app_hello/models/Product.dart';
+import 'package:flutter_app_hello/screens/details/details_screen.dart';
 
 import '../../../constants.dart';
 import 'product_card.dart';
@@ -18,7 +18,7 @@ class NewArrivalProducts extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: SectionTitle(
-            title: "New Arrival",
+            title: "Favoris",
             pressSeeAll: () {},
           ),
         ),

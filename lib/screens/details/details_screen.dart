@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:stylish/constants.dart';
-import 'package:stylish/models/Product.dart';
+import 'package:flutter_app_hello/constants.dart';
+import 'package:flutter_app_hello/models/Product.dart';
 
 import 'components/color_dot.dart';
 
@@ -12,6 +12,7 @@ class DetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: product.bgColor,
       appBar: AppBar(
@@ -93,11 +94,11 @@ class DetailsScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: defaultPadding * 2),
+                  //const SizedBox(height: defaultPadding * 2),
                   Center(
                     child: SizedBox(
-                      width: 200,
-                      height: 48,
+                      //height: size.width * 0.7,
+                      //width: size.width * 0.2,
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(

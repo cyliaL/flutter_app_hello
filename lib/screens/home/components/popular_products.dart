@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stylish/models/Product.dart';
+import 'package:flutter_app_hello/models/Product.dart';
 
 import '../../../constants.dart';
 import 'product_card.dart';
@@ -17,7 +17,7 @@ class PopularProducts extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: SectionTitle(
-            title: "Popular",
+            title: "Populaire",
             pressSeeAll: () {},
           ),
         ),
@@ -33,7 +33,7 @@ class PopularProducts extends StatelessWidget {
                   image: demo_product[index].image,
                   price: demo_product[index].price,
                   bgColor: demo_product[index].bgColor,
-                  press: () {},
+                  press: () { },
                 ),
               ),
             ),

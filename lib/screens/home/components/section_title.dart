@@ -24,7 +24,7 @@ class SectionTitle extends StatelessWidget {
         TextButton(
           onPressed: pressSeeAll,
           child: const Text(
-            "See All",
+            "Voir tout",
             style: TextStyle(color: Colors.black54),
           ),
         )

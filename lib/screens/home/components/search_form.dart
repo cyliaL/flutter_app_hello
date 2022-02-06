@@ -16,13 +16,14 @@ class SearchForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Form(
+    return
+      Form(
       child: TextFormField(
         onSaved: (value) {},
         decoration: InputDecoration(
           filled: true,
           fillColor: Colors.white,
-          hintText: "Search items...",
+          hintText: "Rechercher...",
           border: outlineInputBorder,
           enabledBorder: outlineInputBorder,
           focusedBorder: outlineInputBorder,
@@ -33,13 +34,13 @@ class SearchForm extends StatelessWidget {
           ),
           suffixIcon: Padding(
             padding: const EdgeInsets.symmetric(
-                horizontal: defaultPadding, vertical: defaultPadding / 2),
+                horizontal: defaultPadding/4, vertical: defaultPadding / 2),
             child: SizedBox(
               width: 48,
               height: 48,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: primaryColor,
+                  primary: Colors.black,
                   shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(12)),
                   ),
